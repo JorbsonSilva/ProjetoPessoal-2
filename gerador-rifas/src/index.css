@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@media print {
+  body {
+    background-color: white;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  /* Remove margens padrão da impressão do navegador para a folha A4 */
+  @page { margin: 0; size: A4; }
+}
